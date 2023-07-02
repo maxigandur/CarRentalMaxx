@@ -1,0 +1,221 @@
+.modal-container{
+     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2%;
+    width: 60%;
+    height: 60%;
+    margin-left: 200px;
+    margin-right: auto;
+    margin-top: 5%;
+    background: linear-gradient(#fe5a3dcf,#ffac38c9);
+    position: fixed;
+    border-radius: 10vh;
+    backdrop-filter: blur(25px);
+    z-index: 1050151; 
+    position: fixed;
+    top: 10%;
+    left: 10%;
+
+}
+.modal-container .boxm1 img{
+    border-radius: 50px;
+    width: 80%;
+}
+.modal-container .boxm2 img{
+    border-radius: 50px;
+    width: 80%;
+}
+.bxs-exit{
+    font-size: 50px;
+    margin-bottom: 40%;
+    cursor: pointer;
+}
+.hide{
+    display: none;
+}
+
+.boxm1{
+    font-size: 20px;
+}
+.box-text{
+    display: flex;  
+    text-align: center;
+    width: 80%;
+    justify-content: center;
+    margin-top: -50px;
+}
+
+.box img{
+    transition: 0.3s;
+}
+.box img:hover{
+    scale :1.1;
+    margin-bottom: 20px;
+}
+
+.box-title{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.box-title p{
+    text-decoration: underline;
+}
+.box-price{
+    width: 100%;
+    margin-left: 5%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 10px;
+
+}
+.box-price h2{
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+
+}
+.box-price span{
+    color: blue;
+    cursor: pointer;
+    margin: 10px;
+}
+.boxdate{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -50px;
+}
+.boxdate p{
+    font-size: 20px;
+    text-decoration: underline;
+}
+.boxdate h3{
+    font-size: 25px;
+}
+.boxdate div{
+    display: flex;
+    flex-direction: column;  
+}
+.boxdate .infos{   
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-right: -10px;
+}
+.boxdate .infos p{
+    font-size: 15px;
+    text-decoration: none;
+}
+.boxdate .infos .doors {
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    margin-top: 0px;
+    margin-left: -5px;
+}
+
+
+
+.btndetailrent {
+    margin-top: 20px;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 170px;
+    transition: all 0.5s;
+    cursor: pointer;
+    
+}
+  
+.btndetailrent span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+  
+.btndetailrent span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+  
+.btndetailrent:hover span {
+    padding-right: 25px;
+}
+  
+.btndetailrent:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+
+@media (max-width:790px){
+    .modal-container{
+        margin-left: 100px;
+        display: flex;
+        flex-direction: column;    
+    }
+    .modal-container img{
+        height: 120px;
+    }
+    .boxm1{
+        margin-top: 45px;
+        margin-left: 40px;
+    }
+    .boxm1 h3{
+        font-size: 20px;
+    }
+    .boxm2{
+        margin-left: 50px;
+    }
+    .bxs-exit{
+        position: absolute;
+        top: 25px;
+        right: 30px;
+        font-size: 30px;
+    }
+}
+
+@media (max-width:499px){
+    .modal-container{
+        margin-left: 65px;
+        margin-top: 100px;
+    }
+}
+
+@media (max-width:389px){
+    
+    .modal-container{
+        margin-left: 50px;
+    }
+    .modal-container img{
+        height: 100px;
+    }
+    .modal-container .box-title{
+        margin-top: 10px;
+        margin-right: 5px;
+    }
+    .btndetailrent{
+        font-size: 15px;
+        height: 45px;
+        text-align: center;
+        width: 50%;
+        margin-top: -10px;
+    }
+}

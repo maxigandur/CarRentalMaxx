@@ -1,0 +1,52 @@
+.step3Main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background: linear-gradient(#fe5b3d,#ffac38);
+    padding-top: 88px;
+    padding-bottom: 47px;
+}
+.finish{ 
+    margin-top: 50px;
+    font-size: 20px;
+    color: blue;
+    border-radius: 10px;
+    width: 80px;
+    height: 50px;
+    border: blue solid 3px;
+    background: transparent;
+    cursor: pointer;
+    transition: .5s;  
+}
+.finish:hover{
+    background: #fff;
+    color: #162938;
+}
+.previousPage:hover{ 
+    background-color: rgba(255, 2, 2, 0.956);
+    padding-right: 20px;
+}
+.previousPage{
+    position: absolute;
+    left: 0;
+    top: 50px;
+    bottom: 0;
+    height: 90%;
+    cursor: pointer;
+    border: none;
+    border-top-right-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    transition: .2s;
+}
+.s2{
+    margin-top: 287px;
+}
+
+.inputPrice{
+    text-align: center;
+    font-size: 20px;
+    border-radius: 20px;
+    color: blue;
+}

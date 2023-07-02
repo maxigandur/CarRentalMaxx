@@ -1,0 +1,65 @@
+.step2Main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background: linear-gradient(#fe5b3d,#ffac38);
+    padding-top: 88px;
+    padding-bottom: 44px;
+}
+.nextPage{
+    position: absolute;
+    right: 0;
+    top: 50px;
+    bottom: 0;
+    height: 90%;
+    cursor: pointer;
+    border: none;
+    border-top-left-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+    transition: .2s;
+}
+.nextpage:hover{
+    background-color: rgba(57, 40, 246, 0.585);
+    padding-right: 20px;
+}
+.previousPage2{
+    position: absolute;
+    left: 0;
+    top: 50px;
+    bottom: 0;
+    height: 90%;
+    cursor: pointer;
+    border: none;
+    border-top-right-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    transition: .2s;
+}
+.previousPage2:hover{
+    background-color: rgba(255, 2, 2, 0.956);
+    padding-left: 20px;
+}
+.previousDates{
+    display: flex;
+    position: relative;
+    margin-top: 200px;
+    bottom: 0;
+ 
+}
+.previousDates div{
+    margin: 10px;
+}
+.calendar{
+    margin-left: -5px;
+}
+.mail{
+    margin-left: -5px;
+}
+.inputDates{
+    text-align: center;
+}
+
+@media (max-width:653px){
+    
+}

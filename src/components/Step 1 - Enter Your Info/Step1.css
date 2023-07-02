@@ -1,0 +1,176 @@
+
+.step1Main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(#fe5b3d,#ffac38);
+    padding-top: 88px;
+    padding-bottom:60px;
+}
+
+.step1Main h1{
+    color: #fff;
+}
+
+.input-box{    
+    position: relative;
+    width: 13.5%; 
+    border-bottom: 2px solid #162938;  
+}
+.input-box label{
+    position: absolute;
+    top: 70%;
+    left: 0; 
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: 45px;
+}
+
+.input-box input{   
+    background: transparent;
+    margin-top: 70px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 600;
+    position: absolute;
+    left: -2px;
+} 
+.input-box select{   
+    background: transparent;
+    margin-top: 70px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #162938;
+    font-weight: 600;
+    position: absolute;
+    left: 0;
+} 
+.input-box .icon
+{
+    position: absolute;
+    right: 5px;
+    bottom: 15px;
+    font-size: 1.2em;
+    color: #162938;
+
+} 
+.nextPage0{
+    position: absolute;
+    right: 0;
+    top: 50px;
+    bottom: 0;
+    height: 90%;
+    cursor: pointer;
+    border: none;
+    border-top-left-radius: 5rem;
+    border-bottom-left-radius: 5rem;
+    transition: .2s;
+}
+.nextPage0:hover{
+    background-color: rgba(57, 40, 246, 0.585);
+    padding-right: 20px;
+}
+
+.previousPage1{
+    position: absolute;
+    left: 0;
+    top: 50px;
+    bottom: 0;
+    height: 90%;
+    cursor: pointer;
+    border: none;
+    border-top-right-radius: 5rem;
+    border-bottom-right-radius: 5rem;
+    transition: .2s;
+}
+.previousPage1:hover{
+    background-color: rgba(255, 2, 2, 0.956);
+    padding-left: 20px;
+    
+}
+
+.divselectedCar{
+    display: flex; 
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 175px;
+ 
+}
+
+.divselectedCar img{
+    width: 40%;
+    margin-top: -150px;
+}
+
+
+
+
+@media (max-width:1327px){
+    .input-box{
+        width: 40%;
+    }
+    .divselectedCar img{
+        width: 40%;
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width:500px){
+    .input-box{
+        width: 50%;
+    }
+    .step1Main h1{
+        font-size: 24px;
+    }
+    .input-box .icon{
+        top: 50px;
+    }
+}
+
+@media (max-width:385px){
+   
+    .step1Main h1{
+        margin-top: -60px;     
+    }
+    .step1Main{
+        padding-bottom: 220px;
+    }
+    .divselectedCar img{
+        width: 40%;
+        margin-top: 0;
+    }
+    
+}
+@media (max-width:336px){
+    .input-box{
+        width: 60%;
+    }
+    .nextPage0{
+        height: 50%;
+        top: 210px;
+    }
+    .previousPage1{
+        height: 50%;
+        top: 210px;
+    }
+}
+
+@media (max-width:295){
+    .step1Main h1{
+        text-align: center;
+        font-size: 10px;
+    }
+}
